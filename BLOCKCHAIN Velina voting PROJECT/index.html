@@ -1,0 +1,35 @@
+<!-- vote.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vote Page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Vote Page</h1>
+    <table id="candidatesTable">
+      <thead>
+        <tr>
+          <th>Serial No.</th>
+          <th>Candidate Name</th>
+          <th>Photo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Candidates will be added here dynamically -->
+      </tbody>
+    </table>
+    <form id="voteForm">
+      <label for="candidateSelect">Select Candidate:</label>
+      <select id="candidateSelect"></select>
+      <button type="submit">Vote</button>
+    </form>
+    <a href="admin.html">Go to Admin Page</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
+    <script src="contract_abi.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
